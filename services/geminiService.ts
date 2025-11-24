@@ -284,7 +284,7 @@ const getChatbotAnswer = async (
     contents: prompt,
   });
 
-  return response.text;
+  return response.text || "";
 };
 
 const getCoverLetter = async (
