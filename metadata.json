@@ -1,0 +1,5 @@
+{
+  "name": "Resume Tailor AI",
+  "description": "Upload your resume and a job description to get AI-powered suggestions on how to tailor your resume for the role. Receive specific advice on what to add, remove, or replace to best match the job requirements.",
+  "requestFramePermissions": []
+}
