@@ -130,7 +130,7 @@ const getResumeSuggestions = async (resumeText: string, jobDescription: string):
     },
   });
 
-  const jsonText = response.text.trim();
+  const jsonText = (response.text || "{}").trim();
   try {
     return JSON.parse(jsonText) as TailoredSuggestions & { suggestedSessionName: string };
   } catch (e) {
@@ -215,7 +215,7 @@ const getScreeningPrep = async (
     }
   });
 
-  const jsonText = response.text.trim();
+  const jsonText = (response.text || "[]").trim();
   try {
     return JSON.parse(jsonText) as ScreeningPrepItem[];
   } catch (e) {
@@ -321,7 +321,7 @@ const getCoverLetter = async (
     contents: prompt,
   });
 
-  return response.text;
+  return response.text || "";
 };
 
 export { getResumeSuggestions, getScreeningPrep, getChatbotAnswer, getCoverLetter };
