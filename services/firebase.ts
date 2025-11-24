@@ -12,12 +12,13 @@ if (!apiKey) {
 }
 
 const firebaseConfig = {
-  apiKey: apiKey,
-  authDomain: "gen-lang-client-0377336352.firebaseapp.com",
-  projectId: "gen-lang-client-0377336352",
-  storageBucket: "gen-lang-client-0377336352.appspot.com",
-  messagingSenderId: "377336352", 
-  appId: "1:377336352:web:placeholder" 
+  apiKey: "AIzaSyAnjmqJyDTFckcSzBVxwjoGxvsGwR7VEXU",
+  authDomain: "resume-tailor-ai-1cc9d.firebaseapp.com",
+  projectId: "resume-tailor-ai-1cc9d",
+  storageBucket: "resume-tailor-ai-1cc9d.firebasestorage.app",
+  messagingSenderId: "696940813686",
+  appId: "1:696940813686:web:14ef0cab92fba19092ae57",
+  measurementId: "G-889V8VFF57"
 };
 
 // Initialize Firebase
